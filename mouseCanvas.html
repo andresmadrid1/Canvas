@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>DrawImagine</title>
+        <style type="text/css">
+            body
+            {
+                background-image:url('https://www.mckinsey.com/~/media/mckinsey/business%20functions/people%20and%20organizational%20performance/our%20insights/how%20to%20demonstrate%20calm%20and%20optimism%20in%20a%20crisis/how-to-demonstrate-calm-5050-hero-1536x1536.jpg');
+                backface-visibility:inherit;
+            }
+            h1
+            {
+                color:whitesmoke;
+                text-align: center;
+                font-family: fantasy;
+            }
+            h3
+            {
+                color: whitesmoke;
+                text-align: center;
+                font-family: fantasy;
+            }
+            p
+            {
+                color: whitesmoke;
+                text-align: center;
+                font-size: large;
+                font-family: cursive;
+            }
+            input[type="number"]
+            {
+                text-align: center;
+                border-color: tomato;
+                border-style: inset;
+                border-radius: 20px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            strong
+            {
+                color: whitesmoke;
+                text-align: center;
+            }
+            input[type="color"]
+            {
+                border-color: tomato;
+                border-style: inset;
+                border-radius: 20px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            input[type="button"]
+            {
+
+                background-color: azure;
+                border-style: inset;
+                border-radius: 5px;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+            canvas
+            {
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dibuja tu imaginación</h1>
+        <p><strong>Hola bienvenido a DrawImagine, un sitio donde puedes poner<br>
+            a darle vida a tu imaginación, solo tienes que seleccionar<br>
+            de que color quieres crear tus obras!!!</strong>
+        </p>
+        <h3>Selecciona de que tamaño quieres el dibujo :</h3>
+        <p>
+            <strong>Ancho dibujo:</strong>
+            <input type="number" id = "width" placeholder="Ingrese el ancho">
+            <strong>Alto dibujo:</strong>
+            <input type="number" id = "height" placeholder="Ingrese el alto"><br>
+            <input type="button" value="Listo!" id="button_Canvas"/>
+        </p>
+        <h3>Selecciona tu color favorito!!!</h3> 
+        <input type="color" id= line_Color maxlength="20" size="20"> 
+        <canvas id ="image"></canvas><br>
+        <script src="mousePicture.js"></script><br>
+    </body>
+</html> 
